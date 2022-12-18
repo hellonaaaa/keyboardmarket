@@ -23,7 +23,7 @@ class User(models.Model):
         data["created_time"] = self.created_time
         data["modified_time"] = self.modified_time
         data["avatar"] = self.avatar.url
-        data["email"] = self.email
+        # data["email"] = self.email
         return data
 
     class Meta:

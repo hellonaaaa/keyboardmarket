@@ -21,12 +21,13 @@ class Product(models.Model):
         data["name"] = self.name
         data["price"] = self.price
         data["stored_amount"] = self.stored_amount
-        data["created_time"] = self.created_time
-        data["modified_time"] = self.modified_time
         data["status"] = self.status
         data["img"] = self.img.url
         data["category"] = self.category
         data["info"] = self.info
+        data["created_time"] = self.created_time
+        data["modified_time"] = self.modified_time
+
         return data
 
     class Meta:

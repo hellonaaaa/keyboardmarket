@@ -19,9 +19,15 @@ from keyboardmarket import settings
 from django.conf.urls.static import static
 from django.conf.urls import url, include
 
+# keyboardmarket\urls.py
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    url('user', include('users.urls'))
+    # 路徑 url， if 下面path 'admin/' 搜尋django後臺資料庫 路徑'admin/'
+    path('admin', admin.site.urls),
+    url('user', include('users.urls')),
+    url('login', include('login.urls')),
+    url('product', include('product.urls')),
+    url('usercart', include('usercart.urls'))
+
 ]
 
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

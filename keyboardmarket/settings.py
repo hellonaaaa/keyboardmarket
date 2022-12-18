@@ -41,7 +41,8 @@ INSTALLED_APPS = [
     'product',
     'usercart',
     'userorder',
-    'users'
+    'users',
+    'login'
 ]
 
 MIDDLEWARE = [
@@ -141,7 +142,7 @@ CORS_ALLOW_METHODS = (
     'OPTIONS',
     'POST',
     'DELETE',
-    'PATCH',
+    'PATCH'
 )
 
 CORS_ALLOW_HEADERS = (
@@ -158,6 +159,7 @@ CORS_ALLOW_HEADERS = (
     'processData',
     'contentType'
 )
+
 
 # SMTP
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
