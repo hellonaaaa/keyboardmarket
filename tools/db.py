@@ -24,10 +24,10 @@ class UserStatus(Enum):
 
 
 class ProductCategory(Enum):
-    keyboard = 0
-    earphone = 1
-    mouse = 2
-    desktop = 3
+    KEYBOARD = 0
+    EARPHONE = 1
+    MOUSE = 2
+    DESKTOP = 3
 
 
 @staticmethod
@@ -38,10 +38,10 @@ def list():
 @staticmethod
 def dict():
     return [
-        {"category": "鍵盤", "value": ProductCategory.keyboard.value},
-        {"category": "耳機", "value": ProductCategory.earphone.value},
-        {"category": "滑鼠", "value": ProductCategory.mouse.value},
-        {"category": "桌機", "value": ProductCategory.desktop.value}
+        {"category": "鍵盤", "value": ProductCategory.KEYBOARD.value},
+        {"category": "耳機", "value": ProductCategory.EARPHONE.value},
+        {"category": "滑鼠", "value": ProductCategory.MOUSE.value},
+        {"category": "桌機", "value": ProductCategory.DESKTOP.value}
     ]
 
 
