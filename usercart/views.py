@@ -18,7 +18,6 @@ def usercart(request,username = None,cid = None):
 		if not user:
 			return R.badRequest("User does not exist")
 		user = user[0]
-		print(user)
 		carts = Cart.objects.filter(user = user).filter(status = CartStatus.activate.value)
 		print(carts[0])
 		carts = [i.toJson() for i in carts]

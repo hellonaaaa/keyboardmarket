@@ -9,7 +9,7 @@ CREATED = 201
 # status code 401 : Unauthorized
 UNAUTHORIZED = 401
 
-# status code: 400 Bad Request
+# status code:  Bad Request
 BAD_REQUEST = 400
 
 # status code: 405 method not allowed
